@@ -431,7 +431,7 @@
           </p>
         </div>
         <div>
-          <p class="social-list-title">Social media</p>
+          <p class="footer-subtitles">Social media</p>
           <ul class="list social-icons-footer-list">
             <li class="social-icons-list-item">
               <a href="" class="link social-icons-link footer-social-icons-link">
@@ -466,18 +466,67 @@
             </li>
           </ul>
         </div>
+        <div class="fotter-subscribe-cont">
+          <p class="footer-subtitles">Subscribe</p>
+          <form class="footer-form-subscribe">
+            <label>
+              <input type="email" placeholder="E-mail" class="subscribe-email-input" />
+            </label>
+            <button type="submit" class="footer-subscribe-btn btn">
+              <span class="footer-subscribe-btn-text">Subscribe</span>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- modal window -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- is-hidden -->
+
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
+
+        <form class="modal-form modal-flex">
+          <p class="modal-form-text">Leave your contacts and we will call you back</p>
+          <div class="modal-text-inputs modal-flex">
+            <label class="modal-text-inputs-labels modal-flex">
+              <p class="modal-label-text">Name</p>
+              <span>
+                <input type="text" name="modal-input-name" />
+                <!-- <svg>
+                  <use></use>
+                </svg> -->
+              </span>
+            </label>
+            <label class="modal-text-inputs-labels">
+              <p class="modal-label-text">Phone</p>
+              <input type="tel" name="modal-input-phone" />
+            </label>
+            <label class="modal-text-inputs-labels">
+              <p class="modal-label-text">Email</p>
+              <input type="email" name="modal-input-email" />
+            </label>
+            <label class="modal-text-inputs-labels">
+              <p class="modal-label-text">Comment</p>
+              <textarea name="modal-textarea-comment" placeholder="Text input"></textarea>
+            </label>
+          </div>
+          <label>
+            <input type="checkbox" />
+            <span>I accept the terms and conditions of the </span>
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit"></button>
+        </form>
       </div>
     </div>
 

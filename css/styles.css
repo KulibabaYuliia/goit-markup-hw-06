@@ -674,13 +674,11 @@ body {
   fill: var(--primary-white-color);
 }
 
+/* ============= Modal form ==================== */
+
 .modal-flex {
   display: flex;
   flex-direction: column;
-}
-
-.modal-text-inputs {
-  gap: 8px;
 }
 
 .modal-form-text {
@@ -688,14 +686,115 @@ body {
   color: var(--accent-dark-color);
 }
 
-.modal-label:not(:last-child) {
-  margin-bottom: 4px;
-}
-
 .modal-label-text {
+  margin-bottom: 4px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-
   color: var(--customers-icon-color);
+}
+
+.modal-inputs-label {
+  margin-bottom: 8px;
+}
+
+.modal-input-container {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 11px 38px;
+
+  transition: border-color var(--transition-duration) var(--primary-cubic-bezier);
+}
+
+.modal-input:focus {
+  border-color: var(--brand-color);
+  outline: none;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  transition: fill var(--transition-duration) var(--primary-cubic-bezier);
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: var(--brand-color);
+}
+
+.modal-textarea-label {
+  margin-bottom: 16px;
+}
+
+.modal-textarea {
+  padding: 8px 16px;
+  resize: none;
+  height: 120px;
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-checkbox-label {
+  margin-bottom: 24px;
+}
+
+.modal-checkbox-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon-color);
+}
+
+.modal-checkbox-link {
+  color: var(--brand-color);
+}
+
+.modal-checkbox-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+
+.modal-checkbox-icon {
+  opacity: 0;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-container {
+  background-color: var(--secondary-brand-color);
+  border-color: transparent;
+  color: var(--light-text-color);
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-container .modal-checkbox-icon {
+  opacity: 1;
+  fill: var(--light-text-color);
+}
+
+.modal-button-submit {
+  min-width: 169px;
+  padding: 16px 32px;
+  align-self: center;
+
+  background-color: var(--brand-color);
+  color: var(--primary-white-color);
 }

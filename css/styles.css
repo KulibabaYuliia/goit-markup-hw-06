@@ -421,7 +421,7 @@ body {
 }
 
 .footer-subtitles,
-.modal-text-wrapper {
+.modal-text {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -583,7 +583,7 @@ body {
   flex-direction: column;
 }
 
-.modal-text-wrapper {
+.modal-text {
   text-align: center;
   color: var(--accent-dark-color);
 }

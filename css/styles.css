@@ -421,7 +421,7 @@ body {
 }
 
 .footer-subtitles,
-.modal-text {
+.modal-text-wrapper {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -583,7 +583,7 @@ body {
   flex-direction: column;
 }
 
-.modal-text {
+.modal-text-wrapper {
   text-align: center;
   color: var(--accent-dark-color);
 }
@@ -645,10 +645,10 @@ body {
   padding: 8px 16px;
   resize: none;
 
-  /* font-size: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--customers-icon-color); */
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-textarea::placeholder {

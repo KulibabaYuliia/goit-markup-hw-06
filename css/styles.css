@@ -686,18 +686,10 @@ body {
   fill: transparent;
 }
 
-.modal-checkbox-icon {
-  opacity: 0;
-}
-
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-container {
   background-color: var(--secondary-brand-color);
-  border-color: transparent;
-  color: var(--light-text-color);
-}
-
-.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-icon {
-  opacity: 1;
+  border: none;
+  border-color: var(--secondary-brand-color);
   fill: var(--light-text-color);
 }
 
